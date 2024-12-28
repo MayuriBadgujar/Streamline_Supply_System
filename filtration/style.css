@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 225, 222);
+}
+
+header {
+    background-color: #04010f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+}
+
+.filters {
+    width: 20%;
+    padding: 15px;
+    border: 1px solid #02010f;
+    border-radius: 5px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#priceValue {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.products {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-item {
+    width: calc(25% - 10px);
+    border: 1px solid #02000e;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(228, 223, 205);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.product-item:hover {
+    transform: scale(1.05); /* Increases size by 5% */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+    background-color: #f9f9f9; /* Slightly changes background color */
+}
+
+.product-image {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-image {
+    transform: scale(1.1); /* Enlarges the image slightly */
+}

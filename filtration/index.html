@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction E-commerce Filter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Streamline Supply System</h1>
+    </header>
+    <main>
+        <aside class="filters">
+            <h2>Our Facilities</h2>
+            <form id="filterForm">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="all">All</option>
+                        <option value="electrical">Electrical Fittings</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="flooring">Flooring</option>
+                        <option value="paints">Paints & Coatings</option>
+                        <option value="tools">Tools & Equipment</option>
+                        <option value="materials">Structural Materials</option>
+                        <option value="interior">Interior Fixtures</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <input type="range" id="price" name="price" min="0" max="5000" step="100">
+                    <span id="priceValue">0 - 5000</span>
+                </div> 
+
+            
+                <div class="filter-group">  
+                    <label for="brand">Brand:</label>
+                    <input type="text" id="brand" name="brand" placeholder="Enter brand name">
+                </div>
+                <div class="filter-group">
+                    <label for="material">Material:</label>
+                    <select id="material" name="material">
+                        <option value="all">All</option>
+                        <option value="metal">Metal</option>
+                        <option value="plastic">Plastic</option>
+                        <option value="ceramic">Ceramic</option>
+                        <option value="wood">Wood</option>
+                        <option value="composite">Composite</option>
+                        <option value="concrete">Concrete</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="usage">Usage:</label>
+                    <select id="usage" name="usage">
+                        <option value="all">All</option>
+                        <option value="indoor">Indoor</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="bathroom">Bathroom</option>
+                        <option value="kitchen">Kitchen</option>
+                        <option value="living-room">Living Room</option>
+                    </select>
+                </div>
+            </form>
+        </aside>
+        <section class="products">
+            <h2>Product List</h2>
+            <div id="productList" class="product-list">
+                <!-- Products will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
